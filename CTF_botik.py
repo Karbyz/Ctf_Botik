@@ -16,7 +16,7 @@ intents.members = True
 intents.message_content = True
 intents.guilds = True
 intents.voice_states = True
-ALLOWED_CHANNEL_ID = 1273979926739025931
+ALLOWED_CHANNEL_ID = CHANNEL_ID
 intents.voice_states = True
 intents.guilds = True
 
@@ -31,9 +31,9 @@ user_choices = {}
 events_cache = {}
 
 # Define channel IDs (replace these with actual IDs)
-CHANNEL_ID_1 =1165835889533014016  # Example channel ID for the first message
-CHANNEL_ID_2 =1191768060500131922  # Example channel ID for the second message
-CHANNEL_ID_3 =1228987200717193307  # Example channel ID for the third message
+CHANNEL_ID_1 =CHANNEL_ID  # Example channel ID for the first message
+CHANNEL_ID_2 =CHANNEL_ID  # Example channel ID for the second message
+CHANNEL_ID_3 =CHANNEL_ID  # Example channel ID for the third message
 
 def fetch_ctf_events(start_timestamp, end_timestamp):
     url = f'https://ctftime.org/api/v1/events/?limit=100&start={start_timestamp}&finish={end_timestamp}'
@@ -349,10 +349,7 @@ async def on_interaction(interaction: discord.Interaction):
 
 
 user_ids = [
-    1167777585825075311, 549175810636906507, 1180070847558451255,
-    766141693057302548, 351642664241987585, 631454024796733451,
-    818793776783818752, 561283870423777331, 904290043005374494,
-    695261559760486412, 1177887477822926880, 994586539822690334
+    USERS_ID
 ]
 CHANNEL_ID = 1191768060500131922
 
